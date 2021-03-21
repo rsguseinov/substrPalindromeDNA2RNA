@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RG converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section>
+			<div class="title">DNA to RNA converter</div>
+			<div class="converter">
+				<h3>Enter the DNA strand<br>(You can only use capital letters)</h3>
+				<input type="text" id="DNA" class="input" 
+				oninput="HandlerDNA_oninput()" 
+				onpaste ="HandlerDNA_onpaste()">
+				<span class="valid-symbols-recom" id="converter-warnings"></span><br>
+				<button onclick="getRNA()">Get RNA</button><br>
+				<span id="RNA"></span>
+			</div>
+			<div class="title">Palindrom</div>
+			<div class="palindrom">
+				<h3>Enter a text to check</h3>
+				<span><small>If "true" - the word is a palindrome</small></span>
+				<input type="text" id="palindrom-word" class="input"
+				oninput="HandlerPalidrom_oninput(this.value)">
+				<span class="valid-symbols-recom" id="palindrom-warnings"></span><br>
+				<button onclick="isPalindrom(document.getElementById('palindrom-word').value)">Check</button><br>
+				<span id="palindrom-result"></span>
+			</div>
+			<div class="title">Substr<br><small>(cut a word)</small></div>
+			<div class="substr">
+				<div class="substr__description">
+					<h3>Enter: &emsp;&emsp;&emsp; word &emsp;&emsp;</h3>
+					<h3>&emsp;&emsp;&emsp;&emsp; start</h3>
+					<h3>&emsp;&emsp;&emsp;length</h3>
+				</div>
+				<div class="substr__input">
+					<input type="text" id="substr-word" class="input-word">
+					<input type="number" id="substr-index" class="input-index">
+					<input type="number" id="substr-length" class="input-length">
+				</div>
+				<span class="valid-symbols-recom" id="substr-warnings"></span>
+				<br>
+				<button onclick="substr(document.getElementById('substr-word').value, 
+				document.getElementById('substr-index').value, 
+				document.getElementById('substr-length').value)">Cut</button><br>
+				<span id="substr-result"></span>
+
+			</div>
+    </section>
+    
+  </body>

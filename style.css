@@ -1,0 +1,63 @@
+section {
+  height: 100%;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.title {
+  padding-top: 3%;
+  font-size: 32px;
+  font-weight: bold;
+}
+.converter {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  text-align: center;
+}
+.valid-symbols-recom {
+  text-align: left;
+  color: red;
+  font-size: 14px;
+}
+.palindrom {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.substr {
+  width: 30%;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.substr__description {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.substr__input {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.input-word {
+  width: 55%;
+}
+.input-index {
+  display: flex;
+  margin: 0 auto;
+  width: 20%;
+}
+.input-length{
+  float: right;
+  margin: 0 auto;
+  width: 20%;
+}
