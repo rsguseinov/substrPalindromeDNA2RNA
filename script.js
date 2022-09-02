@@ -56,37 +56,6 @@ function substr(word = '', start = 0, n = word.length){
   var substrWarnings = document.getElementById('substr-warnings');
   substrResult.innerHTML = word.substr(start, n);
   return word.substr(start, n);
-    /*if (start == "") start = 0;
-  if (n == "") n = word.length;
-  if (word == '' || Math.abs(start) >= word.length) {
-    substrWarnings.innerHTML = '*The word is missing or the "start" is greater than or equal to the length of the word. Enter "start" which is less than the word length.'
-    substrWarnings.innerHTML += ' Standard value applied.';
-    substrResult.innerHTML = "' '";
-    return;
-  }
-  if (n > word.length) n = word.length;
-  if (n <= 0) {
-    substrWarnings.innerHTML = 'Length cannot be less than or equal to zero.';
-    substrWarnings.innerHTML += ' Standard value applied.';
-    substrResult.innerHTML = "' '";
-  }
-  let cuttedWord = '';
-
-  if (start < 0) {
-    start = word.length - 1; //not full
-  }
-
-  if (start + n > word.length) {
-    for (let i = start; i != word.length; ++i){
-      cuttedWord += word[i];
-    }
-  }
-  else {
-    for (let i = start; i != start + n; ++i){
-      cuttedWord += word[i];
-    }
-  }
-  substrResult.innerHTML = cuttedWord;*/
 }
 
 function HandlerPalidrom_oninput(input) {
